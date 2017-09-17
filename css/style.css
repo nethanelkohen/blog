@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo');
 body {
   /*background-color: #FDD2D6;*/
-  /*animation: colorchange 2s linear infinite;
-  -webkit-animtion: colorchange 2s linear infinite;*/
-  /*margin: 0;
-  padding: 0;*/
+  animation: colorchange 5s linear infinite;
+  -webkit-animtion: colorchange 5s linear infinite;
+  margin: 0.2;
   opacity: 1;
   transition: 1500ms opacity;
 }
@@ -16,19 +15,31 @@ body.fade-out {
 
 @keyframes colorchange {
   0% {
-    background: black;
+    background: #FF62B0;
+  }
+  12.5% {
+    background: #FF86C2;
   }
   25% {
-    background: black;
+    background: #FFA8D3;
+  }
+  37.5% {
+    background: #FFC8E3;
   }
   50% {
-    background: white;
+    background: #FFECF5;
+  }
+  62.5% {
+    background: #FFC8E3	;
   }
   75% {
-    background: white;
+    background: #FFA8D3;
+  }
+  87.5% {
+    background: #FF86C2;
   }
   100% {
-    background: black;
+    background: #FF62B0;
   }
 }
 
@@ -56,7 +67,7 @@ body.fade-out {
   font-weight: bold;
   display: block;
   font-size: 3.5em;
-  margin: 8% 0;
+  margin: 10% 0;
 }
 
 a {

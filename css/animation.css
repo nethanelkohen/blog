@@ -10,7 +10,7 @@
   display: block;
   width: 100%;
   bottom: .5%;
-  position: absolute;
+  position: fixed;
 }
 
 #flip {
