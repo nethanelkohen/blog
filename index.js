@@ -37,6 +37,10 @@ app.get('/portfolio/:projectId', function(request, response) {
   response.render('portfolio', data);
 });
 
+app.get('/jukebox', function(request, response){
+  response.render('jukebox');
+});
+
 app.get('*', function(request, response){
   response.render('404');
 });

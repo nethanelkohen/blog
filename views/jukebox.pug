@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+  head
+    title My Jukebox
+    link(rel='stylesheet', href='../css/jukebox.css')
+    //- link(rel='stylesheet', href='../css/style.css')    
+    //- link(rel='stylesheet', href='../css/blogstyle.css')
+    link(rel='icon', href='../images/favicon.ico')
+  body
+    #h1
+      h1 Jukebox
+    #playlistcontainer
+      ol#playlist
+    audio#audio
+      source(src='', type='audio/mp3')
+    #controller
+      img#play(src='../images/play.jpg')
+      button#pause.btn Pause
+      button#stop.btn Stop
+      button#add.btn Add songs
+    br
+    #sccontainer
+      div
+        input#scSearch
+        br
+        button#scSubmitButton.btn(type='submit') Search SoundCloud
+        button#scplayBtn.btn Play SoundCloud
+        button#scpauseBtn.btn Pause SoundCloud
+      #title
+      #info
+      script(src='https://connect.soundcloud.com/sdk/sdk-3.1.2.js')
+      script(type='text/javascript', src='../js/jukebox.js')
