@@ -1,0 +1,75 @@
+* {
+  font-family: 'Arimo', sans-serif;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  font-size: 2.5em;
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 1em;
+}
+
+li {
+  float: left;
+}
+
+.main-header {
+  display: block;
+  font-family: 'Arimo', sans-serif;
+}
+
+.main-header-text h1 {
+  display: block;
+  font-size: 3em;
+  text-align: center;
+  padding: 75px 0 20px 0;
+  margin: 0 0 0 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
+}
+
+.main-header-text p {
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0 25px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60%;
+}
+
+.page-wrap {
+  padding: 20px;
+  margin: 30px auto;
+}
+
+.article-main {
+  background-color: #FFECF5;
+}
+
+.article-header {
+  text-align: center;
+  font-size: 2em;
+  padding-top: 10px;
+}
+
+.date-time{
+  text-align: right;
+  margin: 10px 10px;
+  padding-bottom: 10px;
+  letter-spacing: -1px;
+  font-size: 90%;
+}
+
+.article-text {
+  margin: 10px 10px;
+  text-align: left;
+  padding-bottom: 10px;
+}

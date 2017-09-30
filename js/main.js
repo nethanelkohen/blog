@@ -23,5 +23,4 @@ $("body").fadeOut(800, redirectPage);
     }
 
 
-
 });

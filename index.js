@@ -17,8 +17,8 @@ app.get('/contact', function(request, response){
   response.render('contact');
 });
 
-app.get('/about', function(request, response){
-  response.render('about');
+app.get('/blog', function(request, response){
+  response.render('blog');
 });
 
 app.get('/portfolio/:projectId', function(request, response) {

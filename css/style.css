@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo');
 
+* {
+  font-family: 'Arimo', sans-serif;
+}
+
 body {
-  /*background-color: #FDD2D6;*/
   animation: colorchange 5s linear infinite;
   -webkit-animtion: colorchange 5s linear infinite;
   opacity: 1;
@@ -78,19 +81,18 @@ body.fade-out {
 }
 
 .anchor {
-  font-family: 'Arimo', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   display: block;
   font-size: 3.5em;
   margin: 10% 10%;
+  letter-spacing: 5px;
 }
 
 a {
   text-decoration: none;
   transition: color ease-in-out 1s;
   -webkit-transition: color ease-in-out 1s;
-  /*color: red;*/
 }
 
 a:hover {
@@ -111,7 +113,6 @@ a:hover {
 
 .projects-h1{
   font-size: 50px;
-  font-family: 'Arimo', sans-serif;
 }
 
 .projects-ul {
