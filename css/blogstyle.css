@@ -1,26 +1,5 @@
-* {
-  font-family: 'Arimo', sans-serif;
-}
-
-.nav ul {
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-  font-weight: bold;
-  display: block;
-  font-size: 2.5em;
-  text-align: center;
-  letter-spacing: 5px;
-  word-spacing: 1em;
-}
-
-li {
-  float: left;
-}
-
 .main-header {
   display: block;
-  font-family: 'Arimo', sans-serif;
 }
 
 .main-header-text h1 {
@@ -50,6 +29,12 @@ li {
   margin: 30px auto;
 }
 
+.blog-write{
+  text-align: left;
+  font-size: 2em;
+  padding-top: 10px;
+}
+
 .article-main {
   background-color: #FFECF5;
 }
@@ -72,4 +57,22 @@ li {
   margin: 10px 10px;
   text-align: left;
   padding-bottom: 10px;
+}
+
+form {
+  display: inline-block;
+}
+
+input[type=text] {
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
 }

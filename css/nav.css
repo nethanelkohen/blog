@@ -1,0 +1,15 @@
+.nav ul {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  font-size: 2.5em;
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 1em;
+}
+
+li {
+  float: left;
+}

@@ -11,10 +11,6 @@ body {
   transition: opacity 2s ease-in;
 }
 
-#index {
-  /*margin: 5% 15%;*/
-}
-
 body.fade-out {
   opacity: 0;
   transition: none;

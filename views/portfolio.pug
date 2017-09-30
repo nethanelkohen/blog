@@ -3,8 +3,19 @@ html(lang="en")
   head
     meta(charset='utf-8')
     link(rel='stylesheet', href='../css/style.css')
-    link(rel='stylesheet', href='../css/animation.css')
+    link(rel='stylesheet', href='../css/nav.css')
     link(rel='icon', href='../images/favicon.ico')
     title #{projectTitle}
-  body
+  body.fade-out
+    nav.nav
+      ul
+        li
+        a(href='/') Home 
+        li 
+        a(href='/contact') Contact  
+        li 
+        a(href='/blog') Blog  
     h1 Check out my #{projectTitle} Project! Coming soon..
+    script(src='https://code.jquery.com/jquery-3.2.1.js', integrity='sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=', crossorigin='anonymous')
+    script(type='text/javascript', src='../js/projects.js')
+    script(type='text/javascript', src='../js/main.js')
