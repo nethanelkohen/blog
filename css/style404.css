@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+body {
+  animation: colorchange .4s linear infinite;
+  -webkit-animtion: colorchange .4s linear infinite;
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;
+  font-size: 300%;
+  margin: 5% auto;
+  text-transform: uppercase;
+  font-family: Georgia, Serif;
+  color: white;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+@keyframes colorchange {
+  0% {
+    background: #FF62B0;
+  }
+  12.5% {
+    background: #FF86C2;
+  }
+  25% {
+    background: #FFA8D3;
+  }
+  37.5% {
+    background: #FFC8E3;
+  }
+  50% {
+    background: #FFECF5;
+  }
+  62.5% {
+    background: #FFC8E3	;
+  }
+  75% {
+    background: #FFA8D3;
+  }
+  87.5% {
+    background: #FF86C2;
+  }
+  100% {
+    background: #FF62B0;
+  }
+}
+
+@-webit-keyframes colorchange {
+  0% {
+    background: #FF62B0;
+  }
+  12.5% {
+    background: #FF86C2;
+  }
+  25% {
+    background: #FFA8D3;
+  }
+  37.5% {
+    background: #FFC8E3;
+  }
+  50% {
+    background: #FFECF5;
+  }
+  62.5% {
+    background: #FFC8E3	;
+  }
+  75% {
+    background: #FFA8D3;
+  }
+  87.5% {
+    background: #FF86C2;
+  }
+  100% {
+    background: #FF62B0;
+  }
+}

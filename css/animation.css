@@ -9,7 +9,7 @@
   font-weight: bold;
   display: block;
   width: 100%;
-  bottom: .5%;
+  top: .5%;
   position: fixed;
 }
 
@@ -27,7 +27,7 @@
 }
 
 #flip div:first-child {
-  animation: show 4s linear infinite;
+  animation: show 3s linear infinite;
 }
 
 #flip div div {

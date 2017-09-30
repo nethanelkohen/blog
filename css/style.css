@@ -4,9 +4,12 @@ body {
   /*background-color: #FDD2D6;*/
   animation: colorchange 5s linear infinite;
   -webkit-animtion: colorchange 5s linear infinite;
-  margin: 0.2;
   opacity: 1;
-  transition: 2s opacity;
+  transition: opacity 2s ease-in;
+}
+
+#index {
+  /*margin: 5% 15%;*/
 }
 
 body.fade-out {
@@ -80,14 +83,14 @@ body.fade-out {
   font-weight: bold;
   display: block;
   font-size: 3.5em;
-  margin: 10% 0;
+  margin: 10% 10%;
 }
 
 a {
   text-decoration: none;
   transition: color ease-in-out 1s;
   -webkit-transition: color ease-in-out 1s;
-  color: red;
+  /*color: red;*/
 }
 
 a:hover {
@@ -104,4 +107,37 @@ a:hover {
 
 .contact {
   text-align: right;
+}
+
+.projects-h1{
+  font-size: 50px;
+  font-family: 'Arimo', sans-serif;
+}
+
+.projects-ul {
+  list-style-type: none;
+  text-transform: lowercase;
+}
+
+.homebutton {
+  position: fixed;
+  bottom: 2%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.homeimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  width: 40px;
+}
+
+.intro {
+  font-size: 200%;
+}
+
+.change {
+  font-style: italic;
 }

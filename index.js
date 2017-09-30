@@ -6,7 +6,19 @@ app.set('view engine', 'pug');
 app.use(express.static(__dirname));
 
 app.get('/', function(request, response){
+  response.render('index');
+});
+
+app.get('/projects', function(request, response){
   response.render('projects');
+});
+
+app.get('/contact', function(request, response){
+  response.render('contact');
+});
+
+app.get('/about', function(request, response){
+  response.render('about');
 });
 
 app.get('/portfolio/:projectId', function(request, response) {
@@ -15,7 +27,7 @@ app.get('/portfolio/:projectId', function(request, response) {
     1: 'SoundCloud',
     2: 'Instagram Clone',
     3: 'Rotten Tomatoes',
-    4: 'Final Project'
+    4: 'Final'
   }
 
   var data = {
@@ -25,8 +37,10 @@ app.get('/portfolio/:projectId', function(request, response) {
   response.render('portfolio', data);
 });
 
-//have the application listen on a specific port
-// navigate to http://localhost:3000/
+app.get('*', function(request, response){
+  response.render('404');
+});
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
