@@ -1,43 +1,32 @@
 doctype html
 html
-	head
-		meta(charset='utf-8')
-		link(rel='stylesheet', href='../css/style.css')
-		link(rel='stylesheet', href='../css/nav.css')
-		link(rel='stylesheet', href='../css/animation.css')
-		link(rel='icon', href='../images/favicon.ico')
-		title Projects
-	body.fade-out
-		nav.nav
-			ul
-				li
-				a(href='/') Home 
-				li 
-				a(href='contact') Contact  
-				li 
-				a(href='blog') Blog  
-		h1 
-			| Welcome to my Portfolio!
-		p
-		a(
-				href="jukebox"
-			)
-			| See my SoundCloud project
-		p
-		a(
-				href="/portfolio/2"
-			)
-			| See my Instagram Clone project
-		p
-		a(
-				href="/portfolio/3"
-			)
-			| See my Rotten Tomatoes project
-		p
-		a(
-				href="/portfolio/4"
-			)
-			| See my Final project
-		script(src='https://code.jquery.com/jquery-3.2.1.js', integrity='sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=', crossorigin='anonymous')
-		script(type='text/javascript', src='../js/projects.js')
-		script(type='text/javascript', src='../js/main.js')
+  head
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='../css/style.css')
+    link(rel='stylesheet', href='../css/nav.css')
+    link(rel='stylesheet', href='../css/portfoliostyle.css')
+    link(rel='icon', href='../images/favicon.ico')
+    title Projects
+  body.fade-out
+    nav.nav
+      ul
+        li
+        a(href='/') Home 
+        li 
+        a(href='contact') Contact  
+        li 
+        a(href='blog') Blog  
+    div.wrapper
+      h1.header My Portfolio
+      p Check out my SoundCloud project: a JavaScript enabled jukebox connected to SoundCloud's API.
+      a(href="jukebox") 
+        img(src="../images/jukeboxthumbnail.png")
+      p
+      a(href="/portfolio/2") Check out my Instagram Clone project
+      p
+      a(href="/portfolio/3") Check out my Rotten Tomatoes project
+      p
+      a(href="/portfolio/4") Check out my Final project
+    script(src='https://code.jquery.com/jquery-3.2.1.js', integrity='sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=', crossorigin='anonymous')
+    script(type='text/javascript', src='../js/projects.js')
+    script(type='text/javascript', src='../js/main.js')

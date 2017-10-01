@@ -1,25 +1,47 @@
 doctype html
 html
-	head
-		meta(charset='utf-8')
-		link(rel='stylesheet', href='../css/style.css')
-		link(rel='stylesheet', href='../css/animation.css')
-		link(rel='icon', href='../images/favicon.ico')
-		title Blog
-	body.fade-out
-		footer.info
-			h1 test
-			#container
-				#flip
-					div
-						div For Visiting
-					div
-						div You
-					div
-						div Thank
-			#toTop
-				a(href='#')
-					img(src='http://findicons.com/files/icons/2141/web_design_creatives/128/small_smile.png')
-			p © Nethanel Kohen
-		script(src='https://code.jquery.com/jquery-3.2.1.js', integrity='sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=', crossorigin='anonymous')
-		script(type='text/javascript', src='../js/main.js')
+  head
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='../css/style.css')
+    link(rel='stylesheet', href='../css/animation.css')
+    link(rel='stylesheet', href='../css/nav.css')
+    link(rel='stylesheet', href='../css/contactstyle.css')
+    link(rel='icon', href='../images/favicon.ico')
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    title Contact
+  body.fade-out
+  nav.nav
+    ul
+      li
+      a(href='/') Home 
+      li 
+      a(href='projects') Projects  
+      li 
+      a(href='blog') Blog  
+  div.name
+    h3 Hi I'm Nate
+    p I enjoy learning about people, culture, and coding.
+    p Feel free to reach out to me at one of the links below:	
+  div.thumbnails
+    a.fa.fa-facebook(href="https://www.facebook.com/savebeefjerky")
+    a.fa.fa-twitter(href="https://twitter.com/post911seinfeld")
+    a.fa.fa-linkedin(href="https://www.linkedin.com/in/nethanelkohen/")
+    a.fa.fa-instagram(href="https://instagram.com/post911seinfeld/")
+    a.fa.fa-codepen(href="https://codepen.io/nethanelkohen/")
+
+
+
+
+
+  footer.info
+    #container
+      #flip
+        div
+          div For Visiting
+        div
+          div You
+        div
+          div Thank
+
+    script(src='https://code.jquery.com/jquery-3.2.1.js', integrity='sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=', crossorigin='anonymous')
+    script(type='text/javascript', src='../js/main.js')

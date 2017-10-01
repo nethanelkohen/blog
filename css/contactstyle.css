@@ -1,0 +1,42 @@
+.name {
+  text-align: center;
+  font-size: 40px;
+}
+
+.thumbnails {
+  text-align: center;
+  font-size: 40px;
+  word-spacing: 200px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    background: #FF62B0;
+    color: white;
+}
+
+.fa-twitter {
+    background: #FF86C2;
+    color: white;
+}
+
+.fa-linkedin {
+  background: #FFA8D3;
+  color: white;
+}
+
+.fa-instagram {
+  background: #FFC8E3;
+  color: white;
+}
+.fa-codepen {
+  background: #FFECF5;
+  color: white;
+}
