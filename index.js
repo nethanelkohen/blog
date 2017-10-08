@@ -4,6 +4,7 @@ var pg = require('pg');
 var bodyParser = require('body-parser');
 var Post = require("./models/models.js");
 
+app.set('port', (process.env.PORT || 5000))
 
 app.set('view engine', 'pug');
 app.use(express.static(__dirname));
@@ -74,6 +75,6 @@ app.get('*', function(request, response){
   response.render('404');
 });
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
-});
+app.listen(app.get('port'), function() {
+  console.log("Node app is running at localhost:" + app.get('port'))
+})

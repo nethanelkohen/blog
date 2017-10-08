@@ -4,26 +4,26 @@
   "description": "blog",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-     "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nethanelkohen/blog.git"
-  },
-  "author": "nethanel kohen",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nethanelkohen/blog/issues"
-  },
-  "homepage": "https://github.com/nethanelkohen/blog#readme",
   "dependencies": {
     "express": "^4.16.1",
     "pg": "^7.3.0",
     "pug": "^2.0.0-rc.4",
     "sequelize": "^4.13.5"
-    },
+  },
   "engines": {
     "node": "6.11.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nethanelkohen/blog"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "author": "nethanel kohen",
+  "license": "ISC"
 }

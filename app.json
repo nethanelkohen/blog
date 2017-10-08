@@ -1,5 +1,6 @@
 {
   "name": "Blog/Portfolio",
-  "description": "none",
-  "repository": "https://github.com/nethanelkohen/blog"
+  "description": "Blog/Portfolio App NYCDA PTWDI 7/17",
+  "repository": "https://github.com/nethanelkohen/blog",
+  "keywords": ["node", "express", "static"]
 }
