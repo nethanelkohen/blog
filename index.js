@@ -3,6 +3,7 @@ var app = express();
 var pg = require('pg');
 var bodyParser = require('body-parser');
 var Posts = require("./models/models.js");
+var sql = require("./util/sql.js");
 
 app.set('port', (process.env.PORT || 5000));
 
@@ -75,6 +76,11 @@ app.get('*', function(request, response){
   response.render('404');
 });
 
-app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'));
+
+sql.sync().then(function() {
+	console.log("Database initialized!");
+
+app.listen(process.env.PORT || 3000, function() {
+	console.log("Your server is available at localhost:3000!");
+	});
 });
