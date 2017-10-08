@@ -59,8 +59,8 @@
   padding-bottom: 10px;
 }
 
-form {
-  display: inline-block;
+.title, .body {
+  display: block;
 }
 
 input[type=text] {

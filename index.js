@@ -2,9 +2,9 @@ var express = require('express');
 var app = express();
 var pg = require('pg');
 var bodyParser = require('body-parser');
-var Post = require("./models/models.js");
+var Posts = require("./models/models.js");
 
-app.set('port', (process.env.PORT || 5000))
+app.set('port', (process.env.PORT || 5000));
 
 app.set('view engine', 'pug');
 app.use(express.static(__dirname));
@@ -58,7 +58,7 @@ app.get('/portfolio/:projectId', function(request, response) {
     2: 'Instagram Clone',
     3: 'Rotten Tomatoes',
     4: 'Final'
-  }
+  };
 
   var data = {
     projectTitle: projects[request.params.projectId]
@@ -76,5 +76,5 @@ app.get('*', function(request, response){
 });
 
 app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'))
-})
+  console.log("Node app is running at localhost:" + app.get('port'));
+});

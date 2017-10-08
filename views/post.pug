@@ -1,17 +1,31 @@
 doctype html
 html
   head
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='../css/style.css')
+    link(rel='stylesheet', href='../css/blogstyle.css')
+    link(rel='stylesheet', href='../css/nav.css')
     title Post a Message
-    link(rel='stylesheet', href='../styles/main.css')
-  body
-    h1 Post Something
-    form.data-entry(action='/post', method='POST')
-      label(for='title') Title
+  body.fade-out
+    nav.nav
+      ul
+        li
+        a(href='/') Home 
+        li 
+        a(href='contact') Contact  
+        li 
+        a(href='projects') Projects  
+    div.page-wrap
+    form(action='/post', method='POST')
+      label(for='title').title Title
       input(type='text', name='title', required=true)
-      label(for='textArea') Body
-      textarea.textArea(rows='5', cols='60', name='msg', required=true)
-      button.btn Post
       br
       br
-    a(href='/')
-      button.btn View Posts
+      label(for='textArea').body Body
+      textarea(rows='10', cols='40', name='msg', required=true)
+      button Post
+      br
+    a(href='/blog')
+      button View Posts
+    script(src='https://code.jquery.com/jquery-3.2.1.js', integrity='sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=', crossorigin='anonymous')
+    script(type='text/javascript', src='../js/main.js')
