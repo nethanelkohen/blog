@@ -16,6 +16,7 @@
   "port":"5432"
   },
   "production": {
+  "use_env_variable": "DATABASE_URL",
   "username": "dbusername",
   "database": "blog",
   "host": "localhost",
