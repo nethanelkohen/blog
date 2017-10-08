@@ -4,7 +4,8 @@
   "description": "blog",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node index.js",
+     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,10 @@
     "express": "^4.16.1",
     "pg": "^7.3.0",
     "pug": "^2.0.0-rc.4",
-    "sequelize": "^4.13.5"
+    "sequelize": "^4.13.5",
+    "body-parser": "^3.10.10",
   },
   "engines": {
     "node": "6.11.2"
-  }
+  },
 }

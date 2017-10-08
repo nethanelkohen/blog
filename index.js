@@ -3,7 +3,6 @@ var app = express();
 var pg = require('pg');
 var bodyParser = require('body-parser');
 var Post = require("./models/models.js");
-var Posts = require("./models/models.js");
 
 
 app.set('view engine', 'pug');
