@@ -14,7 +14,8 @@
     "body-parser": "^1.18.2"
   },
   "engines": {
-    "node": "6.11.2"
+    "node": "6.11.2",
+    "npm": "3.10.10"
   },
   "repository": {
     "type": "git",
