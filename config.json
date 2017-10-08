@@ -1,0 +1,26 @@
+{
+  "development": {
+  "username": "nethanelkohen",
+  "database": "blog",
+  "host": "localhost",
+  "dialect":"postgres",
+  "protocol":"postgres",
+  "port":"5432"
+ },
+  "staging": {
+  "username": "nethanelkohen",
+  "database": "blog",
+  "host": "localhost",
+  "dialect":"postgres",
+  "protocol":"postgres",
+  "port":"5432"
+  },
+  "production": {
+  "username": "dbusername",
+  "database": "blog",
+  "host": "localhost",
+  "dialect":"postgres",
+  "protocol":"postgres",
+  "port":"5432"
+  }
+}

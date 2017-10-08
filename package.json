@@ -7,11 +7,12 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "^4.16.1",
     "pg": "^7.3.0",
     "pug": "^2.0.0-rc.4",
     "sequelize": "^4.13.5",
-    "body-parser": "^1.18.2"
+    "sequelize-heroku": "^1.0.0"
   },
   "engines": {
     "node": "6.11.2",
