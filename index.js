@@ -3,23 +3,6 @@ var app = express();
 var pg = require('pg');
 var bodyParser = require('body-parser');
 var Posts = require("./models/models.js");
-// var sql = require("./util/sql.js");
-// const { Client } = require('pg');
-//
-// const client = new Client({
-//   connectionString: 'postgres://localhost:5432/blog',
-//   ssl: true,
-// });
-//
-// client.connect();
-//
-// client.query('SELECT public, posts FROM information_schema.tables;', (err, res) => {
-//   if (err) throw err;
-//   for (let row of res.rows) {
-//     console.log(JSON.stringify(row));
-//   }
-//   client.end();
-// });
 
 var sequelize = require('sequelize-heroku').connect();
 
@@ -44,8 +27,6 @@ else
 {
     console.log('No environnement variable found.');
 }
-
-app.set('port', (process.env.PORT || 5000));
 
 app.set('view engine', 'pug');
 app.use(express.static(__dirname));
