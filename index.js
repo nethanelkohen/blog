@@ -1,9 +1,11 @@
 var express = require('express');
 var app = express();
-var pg = require('pg');
+// var pg = require('pg');
 var bodyParser = require('body-parser');
 var Posts = require("./models/models.js");
 var sql = require("./util/sql.js");
+const { Client } = require('pg');
+
 
 const client = new Client({
   connectionString: process.env.DATABASE_URL,
