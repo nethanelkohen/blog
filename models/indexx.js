@@ -1,4 +1,4 @@
-var config = require(__dirname + '/../config/config.json')[env];
+var config = require(__dirname + '/../config.json')[env];
 if (config.use_env_variable) {
   var db_info = process.env[config.use_env_variable].match(/([^:]+):\/\/([^:]+):([^@]+)@([^:]+):(\d+)\/(.+)/);
   config.dialect = db_info[1];
