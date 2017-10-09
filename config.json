@@ -1,27 +1,27 @@
 {
   "development": {
-  "username": "nethanelkohen",
-  "database": "blog",
-  "host": "localhost",
-  "dialect":"postgres",
-  "protocol":"postgres",
-  "port":"5432"
- },
+    "username": "nethanelkohen",
+    "database": "blog",
+    "host": "localhost",
+    "dialect": "postgres",
+    "protocol": "postgres",
+    "port": "5432"
+  },
   "staging": {
-  "username": "nethanelkohen",
-  "database": "blog",
-  "host": "localhost",
-  "dialect":"postgres",
-  "protocol":"postgres",
-  "port":"5432"
+    "username": "nethanelkohen",
+    "database": "blog",
+    "host": "localhost",
+    "dialect": "postgres",
+    "protocol": "postgres",
+    "port": "5432"
   },
   "production": {
-  "use_env_variable": "DATABASE_URL",
-  "username": "nethanelkohen",
-  "database": "blog",
-  "host": "localhost",
-  "dialect":"postgres",
-  "protocol":"postgres",
-  "port":"5432"
+    "use_env_variable": "postgres://qvyfmuxholbzja:9cf4070f79cb53b225f1ddd61c25fb8e14b56a2ed4485663df58887455f3e7e8@ec2-107-22-211-182.compute-1.amazonaws.com:5432/d7d2fa61ebdm7t",
+    "username": "nethanelkohen",
+    "database": "blog",
+    "host": "localhost",
+    "dialect": "postgres",
+    "protocol": "postgres",
+    "port": "5432"
   }
 }

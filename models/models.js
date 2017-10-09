@@ -3,7 +3,7 @@ var Sequelize = require("sequelize");
 var sequelize = new Sequelize({
     username: 'nethanelkohen',
     dialect: 'postgres',
-    host: '127.0.0.1',
+    host: 'localhost',
     port: 5432,
     database: 'blog'
 });
