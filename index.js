@@ -23,10 +23,6 @@ app.get('/contact', function(request, response){
   response.render('contact');
 });
 
-// app.get('/blog', function(request, response){
-//   response.render('blog');
-// });
-
 app.get('/blog', function(request, response) {
   Posts.findAll().then(function(results) {
     response.render('blog', {
@@ -73,10 +69,6 @@ app.get('*', function(request, response){
   response.render('404');
 });
 
-// sql.sync().then(function() {
-// 	console.log("Database initialized!");
-
 app.listen(process.env.PORT || 3000, function() {
 	console.log("Your server is available at localhost:3000!");
 	});
-// });
