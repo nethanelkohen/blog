@@ -7,14 +7,11 @@ html
     link(rel='stylesheet', href='../css/nav.css')
     title Post a Message
   body.fade-out
-    nav.nav
-      ul
-        li
-        a(href='/') Home 
-        li 
-        a(href='contact') Contact  
-        li 
-        a(href='projects') Projects  
+  nav.nav
+    ul 
+      a(href='/') Home 
+      a(href='contact') Contact  
+      a(href='projects') Projects  
     div.page-wrap
     form(action='/post', method='POST')
       label(for='title').title Title
