@@ -16,12 +16,6 @@
   "port":"5432"
   },
   "production": {
-  "use_env_variable": "DATABASE_URL",
-  "username": "nethanelkohen",
-  "database": "blog",
-  "host": "localhost",
-  "dialect":"postgres",
-  "protocol":"postgres",
-  "port":"5432"
+  "use_env_variable": "DATABASE_URL"
   }
 }
