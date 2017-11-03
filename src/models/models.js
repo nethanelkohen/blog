@@ -1,9 +1,9 @@
 const Sequelize = require("sequelize");
 
 if (process.env.DATABASE_URL) {
-  let sequelize = new Sequelize(process.env.DATABASE_URL);
+  var sequelize = new Sequelize(process.env.DATABASE_URL);
 } else {
-    sequelize = new Sequelize({
+  var sequelize = new Sequelize({
     database: process.env.DB_NAME,
     username: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
