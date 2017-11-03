@@ -1,17 +1,9 @@
-var Sequelize = require("sequelize");
-
-// var sequelize = new Sequelize({
-//   username: 'nethanelkohen',
-//   dialect: 'postgres',
-//   host: 'localhost',
-//   port: 5432,
-//   database: 'blog'
-// });
+const Sequelize = require("sequelize");
 
 if (process.env.DATABASE_URL) {
-  var sequelize = new Sequelize(process.env.DATABASE_URL);
+  let sequelize = new Sequelize(process.env.DATABASE_URL);
 } else {
-  var sequelize = new Sequelize({
+    sequelize = new Sequelize({
     database: process.env.DB_NAME,
     username: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
@@ -21,7 +13,7 @@ if (process.env.DATABASE_URL) {
   });
 }
 
-var Posts = sequelize.define('post', {
+const Posts = sequelize.define('post', {
   title: {
     type: Sequelize.STRING(100),
     allowNull: false
